@@ -8,11 +8,14 @@ const UseRefTool = () => {
     }, []);
 
     const handleSubmit = () => {
-        console.log("value bu using useRef:", inputRef.current.value);
+        console.log("value by using useRef:", inputRef.current.value);
+        alert("value by using useRef:"+ inputRef.current.value)
     }
     return (
         <>
-            <div>Hello</div>
+            
+            <h4>How to Use UseRef Hook in React</h4>
+           
             <input ref={inputRef} type="text" />
             <button onClick={() => handleSubmit()}>Save</button>
         </>
